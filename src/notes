@@ -19,5 +19,10 @@ ng build => creates a physical build
 
 
 In ngModel directive:
-() => Sends data from UI to the object
-[] receives data from UI to object
+(ngModel) = "CustomerModel.CustomerCode" => Sends data from UI to the object
+[ngModel] = "CustomerModel.CustomerCode" => receives data from UI to object
+[(ngModel)] = "CustomerModel.CustomerCode" => Two-way binding
+
+Find and kill PORT 4200:
+sudo lsof -t -i tcp:4200 | xargs kill -9
+
