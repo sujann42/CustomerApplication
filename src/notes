@@ -12,3 +12,12 @@ Type: localhost:4200
 
 If you want the application to be loaded from the dist folder:
 Type: localhost:4200/dist/CustomerApplication/ => [This is from in-memory]
+
+
+ng serve => build in-memory
+ng build => creates a physical build
+
+
+In ngModel directive:
+() => Sends data from UI to the object
+[] receives data from UI to object
