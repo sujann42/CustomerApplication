@@ -7,6 +7,8 @@ Angular Notes:
 5) Styles.js => All CSS code goes here.
 
 IF you want to run:
-Type: ng serve => [This is from the harddisk of the computer that you are working on.]
+Type: ng serve => [This is from the hard disk of the computer that you are working on.]
+Type: localhost:4200
+
 If you want the application to be loaded from the dist folder:
 Type: localhost:4200/dist/CustomerApplication/ => [This is from in-memory]
