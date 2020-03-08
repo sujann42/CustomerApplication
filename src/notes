@@ -1,0 +1,12 @@
+Angular Notes:
+
+1) Runtime.js => This is foe webpack runtime.
+2) Polyfill.js => Helps to run new ES version JavaScript on old browsers.
+3) Vendor.js => Actual project code which I coded (Component, Modules, Model)
+4) Main.js => Points to the first module of the project
+5) Styles.js => All CSS code goes here.
+
+IF you want to run:
+Type: ng serve => [This is from the harddisk of the computer that you are working on.]
+If you want the application to be loaded from the dist folder:
+Type: localhost:4200/dist/CustomerApplication/ => [This is from in-memory]
