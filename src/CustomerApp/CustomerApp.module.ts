@@ -2,12 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
-import { CustomerComponent } from './CustomerApp.component';
+import { CustomerAppMasterComponent } from './CustomerAppMaster.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
-    CustomerComponent
+    CustomerAppMasterComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +15,6 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [CustomerComponent]
+  bootstrap: [CustomerAppMasterComponent]
 })
 export class CustomerAppModule { }
