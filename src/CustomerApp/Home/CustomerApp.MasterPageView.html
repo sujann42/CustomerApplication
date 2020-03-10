@@ -1,11 +1,13 @@
 <h2 style="text-align: center">Welcome to Customer Application!!!!</h2>
-
+<div class="alldivs1">
 <table style="background-color: aquamarine" bordercolor="red">
   <tr align="center">
+    <div class="alldivs"></div>
     <td colspan="2">
-      <img  style="align-content: center"  width="700" height="300" src="./src/images/customers.jpg">
+      <img  class="displayed" style="align-content: center" st width="600" height="700" src="./src/images/customers.jpg">
     </td>
   </tr>
+  <div class="alldivs2"></div>
   <tr bordercolor="red">
     <td valign="top">
       <a [routerLink]="['Home']">Home </a><br>
@@ -13,16 +15,17 @@
       <a [routerLink]="['Supplier']">Supplier</a>
     </td>
     <td>
-      <div>
+      <div class="alldivs3">
         <router-outlet></router-outlet>
       </div>
     </td>
   </tr>
   <tr>
     <td>
-      <div>
+      <div class="alldivs4">
         @2020 All Rights Reserved.
       </div>
     </td>
   </tr>
 </table>
+</div>
