@@ -1,0 +1,73 @@
+HOW TO….?
+
+Run Integration?
+Run Test?	npm run test
+1)	If X in front of the test method, it will skip that test
+2)	F in front of the test, it will only run that test.
+How integration is done?	If change is pushed, a Jenkins job will be created. We need to go to Jenkins and run that job.
+How to write logs	private Logger logger = LoggerFactory.getLogger (Exception e){
+logger.error("Exception occured in run method!!!", e);
+}
+
+How To?
+1)	Run Application:
+a.	Maven:  ./mvnw spring-boot:run
+b.	Gradle: ./gradlew bootRun
+
+2)	Build Jar and Run Jar File:
+a.	Maven:
+i.	BUILD JAR: “./mvnw clean package”
+ii.	Run JAR: java -jar target/gs-rest-service-0.1.1.jar
+b.	Gradle:
+i.	BUILD JAR: ./gradlew build
+ii.	RUN JAR: java -jar build/libs/gs-rest-service-0.1.0.jar
+
+FIND PORT 4200 and KILL IT
+
+1)	Type:      netstat -a -n -o => Will list all the listening ports
+Or netstat -ano|findstr "PID: 4200"
+2)	Type:  taskkill -f /pid PID => Here its going be the PID of 4200
+
+NPM & ANGULAR COMMANDS:
+
+COMMAND	PURPOSE
+ng serve --o	Will run the application and opens UI on browser.
+npm install jquery	Installs jquery
+ng build	Builds and creates a dist folder that you can take it to production
+MVW	Model View Whatever
+
+
+
+
+
+COMPONENTS, MODELS & VIEWS
+Component	Binds model and UI [UI=HTML && model==JavaScript]
+Module	Group of components
+{{variable}}	Interpolation: used to display the variable on html page
+Decorator (@Component)	Connects component.ts to component.html (Comes from angular core)
+Component => Decorator is @Component
+@NgModule	Module => Decorator is @NgModule
+Classes	Module, Component, Model: all are classes.
+Declarations	All the components that will be grouped in that AppModule.
+Bootstrap	startup component [the component which will start the application]
+./	Same directory
+../	Upper directory
+Imports	Angular module that need to be imported
+1)	Browser Module
+2)	AppRoutingModule and so on
+Export	Will let class be imported to the module
+main.ts	platformBrowserDynamic().bootstrapModule(AppModule)
+  .catch(err => console.error(err));
+which will define which is the startup module [AppModule] in this case.
+Polyfills	Helps new JavaScript to work with old browsers.
+TypeScript, Node, Polyfills do not belong to angular.
+
+Go Live	To go live we need to:
+1)	Transpile:  compile all .ts files into .js files.
+2)	Bundling is to be done: Bundle modules and components, so that we only have to make 1 call. Otherwise we have to do multiple calls.
+3)	Copy .html and .css files and put them into bin or dist folder.
+WebPack Package Management
+(ng build) using angular cli	Open-Source Framework. Bundles web application together,  compiles and compresses it.
+
+
+
