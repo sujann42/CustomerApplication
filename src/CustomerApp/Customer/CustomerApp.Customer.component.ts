@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-customer',
   templateUrl: './CustomerApp.CustomerView.html',
 })
-export class CustomerAppCustomerComponent {
+
+export class CustomerComponent {
 
 }

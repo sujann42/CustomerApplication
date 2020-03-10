@@ -5,5 +5,5 @@ import { Component } from '@angular/core';
   selector: 'app-supplier',
   templateUrl: './CustomerApp.SupplierView.html',
 })
-export class CustomerAppSupplierComponent {
+export class SupplierComponent {
 }
