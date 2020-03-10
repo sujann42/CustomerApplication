@@ -1,21 +1,21 @@
-<h2 style="text-align: center">Welcome to Master View page!!!!</h2>
-<div>
-  Logo
-</div>
+<h2 style="text-align: center">Welcome to Customer Application!!!!</h2>
 
-<div>
-  Links
-  <div>
-  <a [routerLink]="['Home']">Home </a><br>
-  <a [routerLink]="['Customer']">Customer</a><br>
-  <a [routerLink]="['Supplier']">Supplier</a>
-</div>
-<div>
-  <router-outlet></router-outlet>
-
-</div>
-  <div>
-    Footer
-
-  </div>
-
+<table style="background-color: aquamarine" bordercolor="red">
+  <tr align="center">
+    <td colspan="2">
+      <img  style="align-content: center" width="700" height="300" src="./src/images/customers.jpg">
+    </td>
+  </tr>
+  <tr bordercolor="red">
+    <td valign="top">
+      <a [routerLink]="['Home']">Home </a><br>
+      <a [routerLink]="['Customer']">Customer</a><br>
+      <a [routerLink]="['Supplier']">Supplier</a>
+    </td>
+    <td>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </td>
+  </tr>
+</table>
