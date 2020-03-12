@@ -2,20 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
-import { MasterPageComponent } from './Home/CustomerApp.Master.component';
-import { HomeComponent } from './Home/CustomerApp.component';
-import { CustomerComponent } from './Customer/CustomerApp.Customer.component';
-import { SupplierComponent} from './Supplier/CustomerApp.Supplier.component';
+import { MasterPageComponent } from './CustomerApp.Master.component';
+import { HomeComponent } from './CustomerApp.component';
 import {RouterModule} from '@angular/router';
-import {MainRoutes} from './Routing/CustomerApp.MainRouteing';
+import {MainRoutes} from '../Routing/CustomerApp.MainRouting';
 
 
 
 @NgModule({
   declarations: [
     MasterPageComponent,
-    CustomerComponent,
-    SupplierComponent,
     HomeComponent
   ],
   imports: [
@@ -27,4 +23,4 @@ import {MainRoutes} from './Routing/CustomerApp.MainRouteing';
   providers: [],
   bootstrap: [MasterPageComponent]
 })
-export class Mainmodule { }
+export class MainModule { }

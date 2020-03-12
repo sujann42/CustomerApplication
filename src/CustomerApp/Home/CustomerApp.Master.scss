@@ -1,15 +1,40 @@
-div.alldivs {
-  width:500px;
-  margin: auto;
-  border: 3px solid green;
+
+.maindiv{
+  width: 700px;
+  height: 600px;
+
 }
-.alldivs1, .alldivs2, .alldivs3, .alldivs4 {
-  width:500px;
+.title{
+  width: 700px;
+  height: 100px;
+
+}
+.logo{
+  text-align: center;
+  width: 700px;
+
+}
+.links{
+  width: 700px;
+  height: 100px;
+
+}
+.router{
+  width: 700px;
+  height: 100px;
+
+}
+.footer{
+  width: 700px;
+  height: 100px;
+  padding-top: 70px;
+}
+.router, .footer {
   margin: auto;
-  border: 3px solid red;
+  width: 50%;
 }
 
-img.displayed {
-  display: block;
-  margin-left: auto;
-  margin-right: auto }
+
+
+
+
