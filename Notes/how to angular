@@ -70,4 +70,8 @@ WebPack Package Management
 (ng build) using angular cli	Open-Source Framework. Bundles web application together,  compiles and compresses it.
 
 
+Validations can be done in following:
+1) UI - Not on UI - it can change anytime.
+2) Model- Always put the validations on the model. [Preferred]
+3) Component - binds model and the UI so we don't wanna do it there either.
 
